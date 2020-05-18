@@ -1,7 +1,7 @@
-# Tested with 
+# Applied with 
 # Cytoscape version 3.7.1
-# CyTargetLinker version 
-# stringApp version 
+# CyTargetLinker version 4.0.1
+# stringApp version 1.5.0
 # R version 3.6.0
 # RCy3 version 2.4.0
 if(!"RCy3" %in% installed.packages()){
