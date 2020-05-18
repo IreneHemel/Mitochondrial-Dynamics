@@ -42,31 +42,12 @@ for(l in limits) {
     setVisualStyle('Dynamics')
     
     #Select input nodes
-    selectNodes("FIS1", by.col='query term')
-    selectNodes("STOML2", by.col='query term')
-    selectNodes("FAM73B", by.col='query term')
-    selectNodes("FAM73A", by.col='query term')
-    selectNodes("MTFP1", by.col='query term')
-    selectNodes("MIEF2", by.col='query term')
-    selectNodes("PLD6", by.col='query term')
-    selectNodes("MIEF1", by.col='query term')
-    selectNodes("MFF", by.col='query term')
-    selectNodes("GDAP1", by.col='query term')
-    selectNodes("DNM2", by.col='query term')
-    selectNodes("OPA1", by.col='query term')
-    selectNodes("MSTO1", by.col='query term')
-    selectNodes("MFN1", by.col='query term')
-    selectNodes("MFN2", by.col='query term')
-    selectNodes("MTFR1", by.col='query term')
-    selectNodes("DNM1L", by.col='query term')
-    selectNodes("SLC25A46", by.col='query term')
+    #Select input nodes
+    clearSelection()
+    selectNodes(c('FIS1', 'STOML2', 'FAM73B', 'FAM73A', 'MTFP1', 'MIEF2', 'PLD6', 'MIEF1', 'MFF', 'GDAP1', 'DNM2', 'OPA1', 'MSTO1', 'MFN1', 'MFN2', 'MTFR1', 'DNM1L', 'SLC25A46'), by.col='query term')
     
     Input <- getSelectedNodes()
     setNodeShapeBypass(Input,'diamond')
-    
-    # GO analysis
-    # https://bioconductor.org/packages/release/bioc/vignettes/rWikiPathways/inst/doc/Pathway-Analysis.html --> Gene Ontology section
-  
     
     # heat propagation
     # https://mkutmon.gitlab.io/tutorial-network-algorithms/NetworkPropagation.html
